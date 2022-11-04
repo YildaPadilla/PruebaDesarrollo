@@ -1,0 +1,16 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Mapping Space="C-S" xmlns="http://schemas.microsoft.com/ado/2009/11/mapping/cs">
+  <EntityContainerMapping StorageEntityContainer="TarjetaDBModelStoreContainer" CdmEntityContainer="TarjetaDBEntities">
+    <EntitySetMapping Name="Tarjeta">
+      <EntityTypeMapping TypeName="TarjetaDBModel.Tarjeta">
+        <MappingFragment StoreEntitySet="Tarjeta">
+          <ScalarProperty Name="idTarjeta" ColumnName="idTarjeta" />
+          <ScalarProperty Name="nummeroTarjeta" ColumnName="nummeroTarjeta" />
+          <ScalarProperty Name="fechaVencimiento" ColumnName="fechaVencimiento" />
+          <ScalarProperty Name="nombreTitular" ColumnName="nombreTitular" />
+          <ScalarProperty Name="cvv" ColumnName="cvv" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+  </EntityContainerMapping>
+</Mapping>

@@ -1,0 +1,16 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Schema Namespace="TarjetaDBModel" Alias="Self" annotation:UseStrongSpatialTypes="false" xmlns:annotation="http://schemas.microsoft.com/ado/2009/02/edm/annotation" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm">
+  <EntityType Name="Tarjeta">
+    <Key>
+      <PropertyRef Name="idTarjeta" />
+    </Key>
+    <Property Name="idTarjeta" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="nummeroTarjeta" Type="String" MaxLength="Max" FixedLength="false" Unicode="false" />
+    <Property Name="fechaVencimiento" Type="String" MaxLength="Max" FixedLength="false" Unicode="false" />
+    <Property Name="nombreTitular" Type="String" MaxLength="Max" FixedLength="false" Unicode="false" />
+    <Property Name="cvv" Type="String" MaxLength="Max" FixedLength="false" Unicode="false" />
+  </EntityType>
+  <EntityContainer Name="TarjetaDBEntities" annotation:LazyLoadingEnabled="true">
+    <EntitySet Name="Tarjeta" EntityType="Self.Tarjeta" />
+  </EntityContainer>
+</Schema>
