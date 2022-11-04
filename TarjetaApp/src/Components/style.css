@@ -1,0 +1,200 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+#caja {
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-flow: column;
+    padding-bottom: 60px;
+    border-color: black;
+    /* background-color: #d12d2d; */
+}
+
+#caja form{
+    border-radius: 5px;
+    padding: 20px;
+    width: 600px;
+    padding-top: 160px;
+    border-color: black;
+    background-color: #f2f2f2;
+}
+
+.listar{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-flow: column;
+    padding-bottom: 30px;
+    border-color: black;
+    background-color: #f4f2f9;
+}
+
+table {
+    border-collapse: collapse;
+    width: 100%;
+  }
+  
+  th,
+  td {
+    padding: 8px;
+    text-align: left;
+    border-bottom: 1px solid rgb(197, 193, 193);
+  }
+  .trHover:hover {
+    background-color: #0e1313;
+    color: #fff;
+  }
+  
+
+input {
+    width: 100%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    display: inline-block;
+    border: 1px solid #ccc;
+    border-radius: 10px;
+    box-sizing: border-box;
+}
+
+.pedazo {
+    width: 50%;
+    padding: 5px;
+    display: inline-block;
+}
+
+/* Botones enviar y cancelar */
+input[value="Agregar Tarjeta"] {
+    width: 130px;
+    background-color: #41c345;
+    color: white;
+    padding: 14px 20px;
+    margin: 8px 0;
+    border: none;
+    border-radius: 20px;
+    cursor: pointer;
+    margin-right: 10px;
+}
+
+input[value="Agregar Tarjeta"]:hover {
+    background-color: #026e08;
+}
+
+input[value="Cancelar"] {
+    width: 100px;
+    background-color: #db2727;
+    color: white;
+    padding: 14px 20px;
+    margin: 8px 0;
+    border: none;
+    border-radius: 20px;
+    cursor: pointer;
+}
+
+input[value="Cancelar"]:hover {
+    background-color: #e81212;
+}
+
+span {
+    fontWeight: "bold";
+    color: #db2727;
+}
+
+/* Vista de tarjeta */
+.caja .cajaTarjeta {
+    margin-bottom: -150px;
+    position: relative;
+    height: 250px;
+    width: 400px;
+}
+
+.caja .cajaTarjeta .frente {
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    top: 0;
+    left: 0;
+    background: linear-gradient(45deg, rgb(0, 0, 0), rgb(92, 89, 89));
+    border-radius: 5px;
+    backface-visibility: hidden;
+    box-shadow: 0 15px 25px rgba(0, 0, 0, .2);
+    padding: 20px;
+    transform: perspective(1000px) rotateY(0deg);
+    transition: transform .4s ease-out;
+}
+
+.caja .cajaTarjeta .frente .imagen {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding-top: 10px;
+}
+
+.caja .cajaTarjeta .frente .imagen img {
+    height: 50px;
+}
+
+.caja .cajaTarjeta .frente .numeroTarjeta {
+    padding: 30px 0;
+    font-size: 22px;
+    color: #fff;
+}
+
+.caja .cajaTarjeta .frente .flexbox {
+    display: flex;
+}
+
+.caja .cajaTarjeta .frente .flexbox .box:nth-child(1) {
+    margin-right: auto;
+}
+
+.caja .cajaTarjeta .frente .flexbox .box {
+    font-size: 15px;
+    color: #fff;
+}
+
+.caja .cajaTarjeta .atras {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    background: linear-gradient(45deg, rgb(0, 0, 0), rgb(92, 89, 89));
+    border-radius: 5px;
+    padding: 20px 0;
+    text-align: right;
+    backface-visibility: hidden;
+    box-shadow: 0 15px 25px rgba(0, 0, 0, .2);
+    transform: perspective(1000px) rotateY(180deg);
+    transition: transform .4s ease-out;
+}
+
+.caja .cajaTarjeta .atras .stripe {
+    background: #000;
+    width: 100%;
+    margin: 10px 0;
+    height: 50px;
+}
+
+.caja .cajaTarjeta .atras .box {
+    padding: 0 20px;
+}
+
+.caja .cajaTarjeta .atras .box .cvv-box {
+    height: 50px;
+    padding: 10px;
+    margin-top: 5px;
+    color: #333;
+    background: #fff;
+    border-radius: 5px;
+    width: 100%;
+}
+
+.caja .cajaTarjeta .atras .box img {
+    margin-top: 30px;
+    height: 30px;
+}
